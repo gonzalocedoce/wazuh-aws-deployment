@@ -5,22 +5,10 @@ Single-node Wazuh All-in-One deployment using AWS AMI Linux 2023  with tailored 
 Wazuh XDR/SIEM deployment on Amazon Linux 2023.
 
 ## Architecture
-┌─────────────────────────────────────────┐
-│           Cloud Instance (VM)           │
-│                                         │
-│  ┌──────────────────────────────────┐   │
-│  │        Wazuh Manager             │   │
-│  │  - API: port 55000               │   │
-│  │  - Agent communication: 1514     │   │
-│  │  - Syslog: 514                   │   │
-│  └──────────────────────────────────┘   │
-└─────────────────────────────────────────┘
-         ▲                    ▲
-         │                    │
-┌────────────────┐   ┌─────────────────────┐
-│  Linux Agent   │   │   Windows Agent     │
-│  (Ubuntu/CentOS│   │   (Windows 10/Srv)  │
-└────────────────┘   └─────────────────────┘
+
+<img width="371" height="372" alt="image" src="https://github.com/user-attachments/assets/e16cf0e6-8bf3-4ea8-84ed-c462a1bd2257" />
+
+
 - Single-node All-in-One deployment
 - Amazon Linux 2023
 - Wazuh version 4.14.5
