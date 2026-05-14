@@ -40,10 +40,10 @@ Wazuh XDR/SIEM deployment on Amazon Linux 2023.
 ## Agent Deployment Examples
 
 ### Windows Agent
-```powershell
 Wazuh agent :<img width="331" height="284" alt="image" src="https://github.com/user-attachments/assets/4a246dfd-92dd-4d16-bdc3-ef8192f07d42" />
 In case it get disconnected you can start the procesess from here and change the Manager IP if it changes.
 
+```powershell
 
 msiexec.exe /i wazuh-agent.msi /q WAZUH_MANAGER="54.XXX.XXX.XXX" WAZUH_AGENT_NAME="Gonzalotest"
 
